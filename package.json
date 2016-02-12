@@ -1,0 +1,16 @@
+{
+  "name": "ucrypt",
+  "version": "0.0.1",
+  "description": "put a password and set how it's encrypted. ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "O.C.",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "crypto": "0.0.3",
+    "express": "^4.13.4"
+  }
+}

@@ -1,6 +1,8 @@
 var express = require('express');
 var app = new express();
 
+var port = process.env.PORT || 8080;
+
 var crypto = require('crypto');
 var uCrypt = require('./app/ucrypt');
 var ucrypt = new uCrypt();
@@ -32,6 +34,6 @@ app.get('/decrypt', function(req, res) {
 });
 
 
-app.listen(3003, function() {
-	console.log('we now listen 3003');
-});	
+app.listen(port, function() {
+	console.log('we now listen:' port);
+});	 

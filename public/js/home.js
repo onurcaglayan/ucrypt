@@ -6,7 +6,7 @@ function encrpytPassword() {
 	var xhr = new XMLHttpRequest();
 
 
-	xhr.open('GET', 'http://localhost:3003/encrypt?password=' + pwdInput.value, true);
+	xhr.open('GET', '/encrypt?password=' + pwdInput.value, true);
 
 	xhr.onreadystatechange = function(event) {
 
@@ -32,7 +32,7 @@ function decryptPassword() {
 	var xhr = new XMLHttpRequest();
 
 
-	xhr.open('GET', 'http://localhost:3003/decrypt?myhash=' + hashInput.value, true);
+	xhr.open('GET', '/decrypt?myhash=' + hashInput.value, true);
 
 	xhr.onreadystatechange = function(event) {
 

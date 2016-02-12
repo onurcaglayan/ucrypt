@@ -35,5 +35,5 @@ app.get('/decrypt', function(req, res) {
 
 
 app.listen(port, function() {
-	console.log('we now listen:' port);
+	console.log('we now listen:' + port);
 });	 
